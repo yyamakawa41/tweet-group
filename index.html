@@ -44,8 +44,11 @@
 		</div>
 	</div>
 
-	<div id="stacked-tweets" style="background-image: url({{tweet.user.profile_banner_url}}); opacity=0.5; height='25vh'"ng-repeat="tweet in trumpQuotes">
-			<div class="tweet-message">{{tweet.user.screen_name}}: {{tweet.text}}</div>
+	<div id="stacked-tweets" style="background-image: url({{tweet.user.profile_banner_url}}); opacity: 0.5"ng-repeat="tweet in trumpQuotes">
+			<div class="tweet-message">
+				<div id="screen-name">{{tweet.user.screen_name}}: </div>
+				<div id="text">{{tweet.text}}</div>
+			</div>
 						
 	</div>
 	

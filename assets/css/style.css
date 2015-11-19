@@ -45,7 +45,20 @@
 }
 
 /* line 39, ../compass/sass/style.scss */
-li {
-  border: 1px solid black;
-  height: 7%;
+body {
+  font-size: 40px;
+  text-align: center;
+}
+/* line 42, ../compass/sass/style.scss */
+body #stacked-tweets {
+  height: 250px;
+}
+/* line 44, ../compass/sass/style.scss */
+body #stacked-tweets #screen-name {
+  color: red;
+  text-decoration: underline;
+}
+/* line 48, ../compass/sass/style.scss */
+body #stacked-tweets #text {
+  font-weight: bold;
 }
