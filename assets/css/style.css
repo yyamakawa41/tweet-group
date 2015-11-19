@@ -61,4 +61,5 @@ body #stacked-tweets #screen-name {
 /* line 48, ../compass/sass/style.scss */
 body #stacked-tweets #text {
   font-weight: bold;
+  color: black;
 }

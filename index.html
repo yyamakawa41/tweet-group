@@ -44,8 +44,8 @@
 		</div>
 	</div>
 
-	<div id="stacked-tweets" ng-style="{'background-image': 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)) url({{tweet.user.profile_banner_url}})'}" ng-repeat="tweet in trumpQuotes">
-			<div class="tweet-message">
+	<div id="stacked-tweets" ng-repeat="tweet in trumpQuotes">
+			<div class="tweet-message" ng-style="{'background-image':'linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1)),url({{tweet.user.profile_banner_url}})'}">
 				<div id="screen-name">{{tweet.user.screen_name}}: </div>
 				<div id="text">{{tweet.text}}</div>
 			</div>
