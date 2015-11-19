@@ -36,12 +36,10 @@
 		</div>
 	</div>
 
-	<div id="stacked-tweets">
-		<div class="left-stock-result" id="{{stock.Symbol}}" ng-click="loadStock(stock)" ng-repeat='stock in listOfStocks'>
-			<div class="tweet-message">{{stock.Name}}</div>
-			<div class="tweet-poster {{getChangeClass(stock.Change)}}">{{stock.Change}}</div>
-			<div class="tweet-background">{{stock.Symbol}}</div>				
-		</div>
+	<div id="stacked-tweets" ng-repeat="tweet in tweets">
+			<div class="tweet-message">{{tweet.message}}</div>
+			<div class="tweet-poster {{getChangeClass(stock.Change)}}">{{tweet.poster}}</div>
+			<div class="tweet-background">{{tweet.image}}</div>				
 	</div>
 	
 
