@@ -1,9 +1,51 @@
 /* line 1, ../compass/sass/style.scss */
-#trump-logo {
-  width: 215px;
+.intro {
+  background-color: skyblue;
+  overflow: hidden;
+  color: white;
+}
+/* line 5, ../compass/sass/style.scss */
+.intro #title {
+  text-align: center;
+}
+/* line 8, ../compass/sass/style.scss */
+.intro #trump-image {
+  margin-left: 10%;
+  float: left;
+  width: 25%;
+}
+/* line 12, ../compass/sass/style.scss */
+.intro #trump-image img {
+  width: 100%;
+  margin-bottom: 5%;
+}
+/* line 17, ../compass/sass/style.scss */
+.intro #mexican-link {
+  transform: rotate(-10deg);
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin-left: 15%;
+}
+/* line 23, ../compass/sass/style.scss */
+.intro #mexican-link img {
+  width: 200px;
+}
+/* line 27, ../compass/sass/style.scss */
+.intro #women-link {
+  transform: rotate(10deg);
+  width: 250px;
+  height: 100px;
+  float: left;
+  margin-left: 10%;
+}
+/* line 33, ../compass/sass/style.scss */
+.intro #women-link img {
+  width: 150px;
 }
 
-/* line 6, ../compass/sass/style.scss */
+/* line 39, ../compass/sass/style.scss */
 li {
   border: 1px solid black;
+  height: 7%;
 }

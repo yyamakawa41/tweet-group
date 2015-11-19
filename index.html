@@ -17,19 +17,32 @@
 	<div class="intro">
 		<div>
 			<div class="logo">
-				<h1>Trump Tweet</h1>
-				<img id="trump-logo" src="http://static6.businessinsider.com/image/55918b77ecad04a3465a0a63/nbc-fires-donald-trump-after-he-calls-mexicans-rapists-and-drug-runners.jpg">
+				<div id="title">
+					<h1>Trump Tweets</h1>
+				</div>
+				<div id="mexican-link">
+					<h3>The Donald Loves Mexicans!</br> Open our Borders</h3>
+					<button class="btn btn-danger btn-sm" ng-click=""><img src="http://i1.wp.com/fusiondotnet.files.wordpress.com/2015/06/150618-trump-mexico.png?resize=1200%2C630&quality=80&strip=all"</button>	
+				</div>
+				<div id="trump-image">
+					<img id="trump-logo" src="http://static6.businessinsider.com/image/55918b77ecad04a3465a0a63/nbc-fires-donald-trump-after-he-calls-mexicans-rapists-and-drug-runners.jpg">
+				</div>
+				<div id="women-link">
+					<h3>The Donald Loves Women!</br> They're bleeding from everywhere!</h3>
+					<button class="btn btn-danger btn-sm" ng-click=""><img src="http://freethetampons.org/assets/images/tampon-side-angle.png"</button>	
+				</div>
+				
 			</div>
 		</div>
 	</div>
 
-	<ul>
-		<li class="tweets" ng-repeat="tweet in tweets">
-
-		</li>
-		
-
-	</ul>
+	<div id="stacked-tweets">
+		<div class="left-stock-result" id="{{stock.Symbol}}" ng-click="loadStock(stock)" ng-repeat='stock in listOfStocks'>
+			<div class="tweet-message">{{stock.Name}}</div>
+			<div class="tweet-poster {{getChangeClass(stock.Change)}}">{{stock.Change}}</div>
+			<div class="tweet-background">{{stock.Symbol}}</div>				
+		</div>
+	</div>
 	
 
 
