@@ -41,12 +41,16 @@ body{
 	text-align: center;
 	#stacked-tweets{
 		height: 250px;
-		#screen-name{
+		.tweet-message{
+			height: 250px;
+		}
+		.screen-name{
 			color: red;
 			text-decoration: underline;
 		}
-		#text{
+		.text{
 			font-weight: bold;
+			color: black;
 		}
 	}
 }

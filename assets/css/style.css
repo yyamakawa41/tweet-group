@@ -54,11 +54,16 @@ body #stacked-tweets {
   height: 250px;
 }
 /* line 44, ../compass/sass/style.scss */
-body #stacked-tweets #screen-name {
+body #stacked-tweets .tweet-message {
+  height: 250px;
+}
+/* line 47, ../compass/sass/style.scss */
+body #stacked-tweets .screen-name {
   color: red;
   text-decoration: underline;
 }
-/* line 48, ../compass/sass/style.scss */
-body #stacked-tweets #text {
+/* line 51, ../compass/sass/style.scss */
+body #stacked-tweets .text {
   font-weight: bold;
+  color: black;
 }
