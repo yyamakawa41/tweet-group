@@ -4,17 +4,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Twitter Project</title>
-	
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="bootstrap.css">
 	<link rel="stylesheet" href="assets/css/style.css">
-
-	<!-- // <script type="text/javascript" src="https://code.jquery.com/jquery-git2.min.js"></script> -->
-	 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script> -->
-	<!-- // <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script> -->
 	<script type="text/javascript" src="angular.min.js"></script>
 	<script type="text/javascript" src="angular-route.min.js"></script>
 	<script type="text/javascript" src="controller.js"></script>
+
 
 </head>
 <body ng-controller="twitterController">
@@ -43,8 +38,9 @@
 			</div>
 		</div>
 	</div>
-
-	<div id="stacked-tweets" ng-style="{'background-image': 'linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)) url({{tweet.user.profile_banner_url}})'}" ng-repeat="tweet in trumpQuotes">
+<!--ng-style="background-image: url('{{tweet.user.profile_background_image_url}}')"-->
+	<div id="stacked-tweets" class="pretty-background" ng-repeat="tweet in trumpQuotes" ng-style="{'background-image':'url({{tweet.user.profile_background_image_url}})'}">
+	
 			<div class="tweet-message">
 				<div id="screen-name">{{tweet.user.screen_name}}: </div>
 				<div id="text">{{tweet.text}}</div>
